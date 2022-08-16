@@ -1,0 +1,128 @@
+
+/* general styling  */
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.column-article { /* Floats three columns side by side */
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-top: 50vh;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.row {
+  margin: 0 -5px; /* Removes extra left and right margins, due to padding in columns */
+  display: block;
+}
+
+
+.row:after { /* Clears floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Card stylings */
+.card {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  width: 380px;
+  height:280px;
+  margin-top: 10vh;
+}
+
+.card-icon {
+  position: absolute;
+  top:60px;
+  right:10px;
+  width:35px;
+  height:35px;
+  color:rgb(245, 244, 244);
+}
+
+
+.red-card {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+19,fe9090+45,ff5c5c+100 */
+background: #febbbb; /* Old browsers */
+background: -moz-linear-gradient(left,  #febbbb 19%, #fe9090 45%, #ff5c5c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #febbbb 19%,#fe9090 45%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #febbbb 19%,#fe9090 45%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 */
+}
+
+.blue-card {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,b7deed+35,71ceef+50,21b4e2+100,b7deed+100 */
+background: #b7deed; /* Old browsers */
+background: -moz-linear-gradient(left,  #b7deed 0%, #b7deed 35%, #71ceef 50%, #21b4e2 100%, #b7deed 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #b7deed 0%,#b7deed 35%,#71ceef 50%,#21b4e2 100%,#b7deed 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #b7deed 0%,#b7deed 35%,#71ceef 50%,#21b4e2 100%,#b7deed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=1 ); /* IE6-9 */
+}
+
+.light-blue-card {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#93cede+52,75bdd1+97,49a5bf+100 */
+background: #93cede; /* Old browsers */
+background: -moz-linear-gradient(left,  #93cede 52%, #75bdd1 97%, #49a5bf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #93cede 52%,#75bdd1 97%,#49a5bf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #93cede 52%,#75bdd1 97%,#49a5bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf',GradientType=1 ); /* IE6-9 */
+}
+
+.h1-card, .p-card {
+  color: aliceblue;
+  position: absolute;
+  left: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h1-card {
+  font-size: 25px;
+  top: 50px;
+  margin-bottom: 28px;
+}
+
+.p-card-big {
+font-size: 35px;
+top: 100px;
+}
+
+.p-card-small {
+  font-size: 24px;
+  top: 200px;
+  }
+
+  
+.card::before {   /* bubble one above*/
+  content: "";
+  position: absolute;
+  border-radius: 180px;
+  background-color: white;
+  opacity: 0.3;
+  padding: 120px;
+  top: -30px;
+  left:300px;
+}
+
+.card::after {  /* bubble two below */
+  content: "";
+  position: absolute;
+  border-radius: 180px;
+  background-color: white;
+  opacity: 0.3;
+  padding: 120px;
+  top: 150px;
+  left:256px;
+}
+
